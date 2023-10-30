@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  //(char *) é opcional
+  char *p_c = (char *)malloc(1); //vai alocar 1 byte = 1 char
+  printf("%p",p_c);
+  free(p_c);
+  p_c = NULL;
+
+  return 0;
+}
