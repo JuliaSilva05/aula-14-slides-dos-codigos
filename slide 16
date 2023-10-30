@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int idade = 25;
+  double desconto = 9.8;
+  float vetor[5];
+  int *p_idade = &idade;
+  printf("%d %f\n", idade, desconto);
+
+  printf("%p\n", p_idade);
+  
+  return 0;
+}
