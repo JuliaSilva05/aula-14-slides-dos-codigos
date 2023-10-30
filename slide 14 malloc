@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+//a partir daqui os imports serão ignorados
+int main(void) {
+  int* erro_alloc = malloc(1000000000000);
+  
+  free(erro_alloc);
+  erro_alloc = NULL;
+  
+  if (erro_alloc == (NULL)) {
+    printf("Não foi possível alocar memória %p\n",erro_alloc);
+  }
+   
+  return 0;
+}
